@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>cartoonEdu | form</title>
+    <link rel="stylesheet" href="stylee.css">
+
+    <style>
+
+    </style>
+</head>
+<body>
+    <script>
+function tampilWaktu() {
+    const waktu = new Date();
+    const jam = waktu.getHours().toString().padStart(2, '0');
+    const menit = waktu.getMinutes().toString().padStart(2, '0');
+    const detik = waktu.getSeconds().toString().padStart(2, '0');
+
+    document.getElementById("jam").innerHTML =
+        jam + ":" + menit + ":" + detik;
+}
+
+setInterval(tampilWaktu, 1000);
+</script>
+
+<header class="hero">
+</header>
+
+<nav class="navbar">
+  <a href="INDEX.HTML">Home</a>
+  <a href="about.html">About</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="uascontact.html">Contact us</a>
+  <a href="form.html">Formulir</a>
+</nav>
+
+    <main>
+    <div class="form-container">
+        <h1>Kritik / Saran</h1>
+
+        <form>
+            <table>
+                <tr>
+                    <td class="label">Nama</td>
+                    <td>
+                        <input type="text" placeholder="masukan Nama Anda">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="label">Kritik</td>
+                    <td>
+                        <textarea placeholder="masukan Kritik"></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="label">Sarannya..</td>
+                    <td>
+                        <textarea placeholder="masukan Saran"></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="label">Pesan</td>
+                    <td>
+                        <textarea placeholder="masukan Pesan Anda" class="pesan"></textarea>
+                    </td>
+                </tr>
+            </table>
+
+            <div class="form-buttons">
+                <button type="submit">Kirim</button>
+                <button type="reset">Batal</button>
+            </div>
+        </form>
+    </div>
+</main>
+<footer>
+    <p>©Copy&Right 2026 silky unnisa awaluddin | 251011700909 | 01SIFP014</p>
+    <p id="jam"></p>
+</footer>
+
+
+</body>
+</html>

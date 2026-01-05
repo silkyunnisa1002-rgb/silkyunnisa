@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>cartoonEdu | About</title>
+  <link rel="stylesheet" href="stylee.css">
+</head>
+<body>
+
+  <script>
+function tampilWaktu() {
+    const waktu = new Date();
+    const jam = waktu.getHours().toString().padStart(2, '0');
+    const menit = waktu.getMinutes().toString().padStart(2, '0');
+    const detik = waktu.getSeconds().toString().padStart(2, '0');
+
+    document.getElementById("jam").innerHTML =
+        jam + ":" + menit + ":" + detik;
+}
+
+setInterval(tampilWaktu, 1000);
+</script>
+
+<header class="hero">
+</header>
+
+<nav class="navbar">
+  <a href="INDEX.HTML.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="uascontact.html">Contact us</a>
+  <a href="form.html">Formulir</a>
+</nav>
+
+<section class="content">
+  <h2>Tentang  Kartun Education</h2>
+
+  <p>Kartun Education adalah platform pembelajaran edukatif yang dirancang untuk membantu anak-anak hingga remaja belajar dengan cara yang menyenangkan dan mudah dipahami. Kami menggabungkan unsur pendidikan dengan kartun, animasi, dan visual menarik agar proses belajar tidak terasa membosankan. Melalui pendekatan ini, kami ingin menciptakan pengalaman belajar yang lebih hidup, interaktif, dan penuh imajinasi.</p>
+
+  <p>Kami memahami bahwa setiap anak memiliki cara belajar yang berbeda. Oleh karena itu, Kartun Education menyajikan materi dengan bahasa yang sederhana, tampilan yang ceria, serta konten visual yang mendukung pemahaman. Tujuan kami adalah membantu pengguna memahami konsep pembelajaran dengan lebih cepat dan efektif tanpa tekanan.</p>
+
+  <p>Kartun Education berfokus pada pengembangan minat belajar, kreativitas, dan rasa ingin tahu. Konten yang kami sajikan tidak hanya bertujuan untuk memberikan pengetahuan, tetapi juga untuk menumbuhkan sikap positif terhadap proses belajar itu sendiri. Dengan belajar melalui kartun, anak-anak dapat menikmati materi sambil tetap mendapatkan nilai edukatif yang bermanfaat.</p>
+
+<p>Kami juga berkomitmen untuk terus mengembangkan dan memperbarui konten agar sesuai dengan kebutuhan pembelajaran masa kini. Masukan dari pengguna, orang tua, dan pendidik menjadi bagian penting dalam proses pengembangan Kartun Education. Kami percaya bahwa kolaborasi dan komunikasi yang baik akan menghasilkan platform edukasi yang lebih berkualitas.</p>
+
+<p>Kartun Education hadir sebagai teman belajar yang kreatif, ramah, dan inspiratif. Kami berharap platform ini dapat membantu menciptakan generasi yang cerdas, kreatif, dan bersemangat dalam belajar.</p>
+</section>
+
+<footer>
+  <p>©Copy&Right 2026 silky unnisa awaluddin | 251011700909 | 01SIFP014</p>
+  <p id="jam"></p>
+</footer>
+
+</body>
+</html>

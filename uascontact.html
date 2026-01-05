@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>cartoonEdu | Contact</title>
+  <link rel="stylesheet" href="stylee.css">
+</head>
+<body>
+
+  <script>
+function tampilWaktu() {
+    const waktu = new Date();
+    const jam = waktu.getHours().toString().padStart(2, '0');
+    const menit = waktu.getMinutes().toString().padStart(2, '0');
+    const detik = waktu.getSeconds().toString().padStart(2, '0');
+
+    document.getElementById("jam").innerHTML =
+        jam + ":" + menit + ":" + detik;
+}
+
+setInterval(tampilWaktu, 1000);
+</script>
+
+<header class="hero">
+</header>
+
+<nav class="navbar">
+  <a href="I">Home</a>
+  <a href="about.html">About</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="uascontact.html">Contact us</a>
+  <a href="form.html">Formulir</a>
+</nav>
+
+<section class="content">
+  <h3>Hubungi Kami</h3>
+
+  <p>Kartun Education hadir sebagai platform pembelajaran yang mengutamakan kreativitas, keceriaan, dan kemudahan dalam belajar. Kami sangat menghargai setiap pertanyaan, saran, kritik, maupun masukan yang Anda berikan. Melalui halaman Contact Us ini, Anda dapat menghubungi kami untuk berbagai keperluan, mulai dari informasi seputar konten edukasi, penggunaan platform, hingga peluang kerja sama.
+
+<p>Kami percaya bahwa komunikasi yang baik adalah bagian penting dalam membangun pengalaman belajar yang berkualitas. Masukan dari pengunjung, orang tua, pendidik, maupun siswa membantu kami untuk terus memperbaiki dan mengembangkan Kartun Education agar semakin relevan dan bermanfaat.
+
+<p>Tim Kartun Education berkomitmen untuk memberikan respons yang ramah, jelas, dan tepat waktu. Setiap pesan yang masuk akan kami baca dan tanggapi dengan sungguh-sungguh. Terima kasih telah meluangkan waktu untuk menghubungi kami dan menjadi bagian dari perjalanan Kartun Education dalam menciptakan pembelajaran yang menyenangkan, kreatif, dan penuh inspirasi.</p>
+</section>
+
+<footer>
+    <p>©Copy&Right 2026 silky unnisa awaluddin | 251011700909 | 01SIFP014</p>
+    <p id="jam"></p>
+     <div class="mt-2">
+        <a href="https://www.instagram.com/bts.bighitofficial" target="_blank" class="text-white me-3">
+            <i class="bi bi-instagram"></i> Instagram
+        </a>
+        <a href="https://wa.me/6281234567890" target="_blank" class="text-white">
+            <i class="bi bi-whatsapp"></i> WhatsApp
+        </a>
+    </div>
+</footer>
+
+</body>
+</html>
